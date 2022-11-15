@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Untitled-1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">>
+    <title>Document</title>
+</head>
+<body>
+<!-- navbar -->
+    <button id="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="50px" height="50px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M415 4146 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 26 -8 689 -10 2154 -8 l2117 3 27 21 c53 39 69 71 69 134 0 63 -16 95 -69 134 l-27 21 -2127 2 c-1753 2 -2132 0 -2157 -11z"/>
+                <path d="M415 2706 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 26 -8 593 -10 1834 -8 l1797 3 27 21 c53 39 69 71 69 134 0 63 -16 95 -69 134 l-27 21 -1807 2 c-1487 2 -1812 0 -1837 -11z"/>
+                <path d="M415 1266 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 25 -8 377 -10 1114 -8 1069 3 1077 3 1104 24 53 39 69 71 69 134 0 63 -16 95 -69 134 -27 21 -34 21 -1114 23 -888 2 -1093 0 -1117 -11z"/>
+            </g>
+        </svg>
+    </button>
+    <nav>
+        <button id="menu-btn-in">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="50px" height="50px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M415 4146 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 26 -8 689 -10 2154 -8 l2117 3 27 21 c53 39 69 71 69 134 0 63 -16 95 -69 134 l-27 21 -2127 2 c-1753 2 -2132 0 -2157 -11z"/>
+                    <path d="M415 2706 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 26 -8 593 -10 1834 -8 l1797 3 27 21 c53 39 69 71 69 134 0 63 -16 95 -69 134 l-27 21 -1807 2 c-1487 2 -1812 0 -1837 -11z"/>
+                    <path d="M415 1266 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 25 -8 377 -10 1114 -8 1069 3 1077 3 1104 24 53 39 69 71 69 134 0 63 -16 95 -69 134 -27 21 -34 21 -1114 23 -888 2 -1093 0 -1117 -11z"/>
+                </g>
+            </svg>
+        </button>
+        <h1>Education</h1>
+        <ul>
+            <li> <a href="home.html">HOME</a> </li>
+            <li> <a href="Permutation-de-deux-nombres.html">Permutation de deux nombres</a></li>
+            <li> <a href="Valider-une-date.html">Valider une date</a></li>
+            <li id="boucles"> <a>Boucles</a>
+                <ul class="dropdown" id="dropdownBoucle">
+                    <li id="multiblication" class="hide"> <a href="Table-de-multiplication.html">Table de multiplication</a></li>
+                    <li id="guess" class="hide"> <a href="Devine-le-nombre.html">Devine le nombre</a></li>
+                    <li id="losange" class="hide"> <a href="Losange-en-étoiles.html">Losange en étoiles</a></li>
+                </ul>
+            </li>
+            <li id="chaines"> <a href="#">Chaines de caractères</a>
+                <ul class="dropdown">
+                    <li id="RS" class="hide" > <a href="Recherche-et-suppression-dans-une-chaine.html">Recherche et suppression dans une chaine</a></li>
+                    <li id="voyelles" class="hide" > <a href="Compter-le-nombre-de-voyelles-dans-une-chaine.html">Compter le nombre de voyelles dans une chaine</a></li>
+                </ul>
+            </li>
+            <li id="tableaux"> <a href="#">Tableaux</a>
+                <ul class="dropdown">
+                    <li id="tri"  class="hide"  ><a href="Tri-d’un-tableau.html">Tri d’un tableau</a></li>
+                    <li id="recherche" class="hide"> <a href="Recherche-dans-un-tableau.html">Recherche dans un tableau</a></li>
+                </ul>
+            </li>
+            <li> <a href="Calculatrice.html">Calculatrice</a></li>
+        </ul>
+
+    </nav>
+    <!-- main -->
+    <main>
+                                                    <!-- Table de multiplication -->
+        <div class="tdm">
+            <h1>Table de multiplication</h1>
+            <h3>Enonce</h3>
+            <div class="part">
+                <p>Afficher la table de multiplication d’un nombre saisi par l’utilisateur dans un input.</p>
+            </div>
+            <h3>Démo</h3>
+            <input type="number" id="nombr1">
+            <button id="afficher">Générer la table</button>
+            <div id="rs"></div>
+                <h2>Code source</h2>
+                <div>
+                    <textarea readonly rows="28">
+
+
+                        document.getElementById('afficher').onclick=function(){
+                            let i,res="";
+                            let v= document.getElementById('nombr1').value;
+                            for(i=1;i<=10;i++){
+                                res=res+"<p>"+v+"x"+i+"="+ i*v+ "</p>";
+                                document.getElementById('rs').innerHTML=res;
+                            }
+                        }
+                        document.getElementById('tableaux').onclick=function(){
+                            document.getElementById('tri').classList.toggle('hide');
+                            document.getElementById('recherche').classList.toggle('hide');
+
+                        }
+                        document.getElementById('chaines').onclick=function(){
+                            document.getElementById('RS').classList.toggle('hide');
+                            document.getElementById('voyelles').classList.toggle('hide');
+
+                        }
+                        document.getElementById('boucles').onclick=function(){
+                            document.getElementById('multiblication').classList.toggle('hide');
+                            document.getElementById('guess').classList.toggle('hide');
+                            document.getElementById('lonsage').classList.toggle('hide');
+
+                        }
+                    </textarea >
+                </div>
+
+        </div>
+    </main>
+    <script src="Table-de-multiplication.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gugi', cursive;
+    font-size: 1em;
+}
+
+nav {
+    background: rgb(138, 206, 171);
+    background: linear-gradient(180deg, rgba(138, 206, 171, 1) 0%, rgba(199, 223, 205, 1) 100%);
+    min-width: 250px;
+    position: sticky;
+    padding: 2%;
+    box-sizing: border-box;
+    min-height: 100vh;
+    transition: ease-in-out all 500ms;
+    overflow-y: visible;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+ul li a {
+    display: block;
+    padding: 8%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#nave2 li a {
+    display: block;
+    padding: 8%;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 0% 3%;
+    width: 100%;
+}
+
+body {
+    background: #fef9db;
+    /* background: linear-gradient(180deg, rgba(252,228,105,1) 0%, rgba(254,249,219,1) 100%); */
+    display: flex;
+    min-height: 100%;
+}
+
+.Calculatrice, .ValiderUneDate, .LosangeEnEtoiles, .TriDunTableau, .rechdutbl, .compter, .Permutation, .rechdutbl, .resduc, .tdm, .container, #dln {
+    box-sizing: border-box;
+    background: rgb(138, 206, 171);
+    background: linear-gradient(180deg, rgba(138, 206, 171, 1) 0%, rgba(199, 223, 205, 1) 100%);
+    /* width: 45%; */
+    margin-top: 14%;
+    height: fit-content;
+    padding: 3%;
+}
+
+.Calculatrice h1, .ValiderUneDate h1, .LosangeEnEtoiles h1, .TriDunTableau h1, .rechdutbl h1, .compter h1, .Permutation h1, .rechdutbl h1, .resduc h1, .tdm h1, .container h1, dln h1, nav h1 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#valider {
+    display: flex;
+}
+
+.tbl input {
+    display: none;
+}
+
+.tbl input {
+    width: 4%;
+}
+
+.tble input {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+A {
+    cursor: pointer;
+}
+
+input, button {
+    padding: 2%;
+    border-radius: 3%;
+}
+
+.cal {
+    display: flex;
+    margin-left: -1.1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.cal input {
+    margin: 0 0 0 10px;
+    font-size: 0.7em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 3%;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1%;
+}
+
+.part {
+    box-sizing: border-box;
+    background-color: #e4e4e4;
+    padding: 2%;
+    height: fit-content;
+    border-radius: 30px;
+    border: 2px solid rgb(40, 104, 71);
+}
+
+code textarea {
+    box-sizing: border-box;
+    background-color: #e4e4e4;
+    width: 52.5vw;
+    height: 30vh;
+    padding: 2%;
+    border-radius: 30px;
+    border: 2px solid rgb(40, 104, 71);
+
+}
+
+code {
+    border-radius: 30px;
+}
+
+nav h1 {
+    margin-bottom: 12%;
+}
+
+.def img {
+    height: 40%;
+    width: 40%;
+    padding: 6%;
+}
+
+.def {
+    text-align: center;
+}
+
+.def h1 {
+    padding: 5%;
+    font-size: 4em;
+}
+
+.def p {
+    font-size: 1.1em;
+}
+
+div:has(textarea) {
+    overflow: clip;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    overflow: auto;
+}
+
+nav.show {
+    transform: translateX(0);
+
+}
+
+.cal {
+    flex-wrap: wrap;
+}
+
+#menu-btn {
+    width: fit-content;
+    top: 1em;
+    left: 0;
+    margin: 2% 0;
+    background-color: rgb(138, 206, 171);
+    padding: 0 1em 0 0 !important;
+    outline: none;
+    border: none;
+    border-radius: 0 99px 99px 0;
+    box-sizing: border-box;
+    display: none;
+}
+
+#menu-btn-in {
+    background-color: rgb(138, 206, 171);
+    padding: 0 1em 0 0 !important;
+    outline: none;
+    border: none;
+    border-radius: 0 99px 99px 0;
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        transform: translateX(-100%);
+        position: fixed;
+    }
+
+    main {
+        width: 100%;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    #menu-btn-in {
+        display: block;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .Calculatrice, .ValiderUneDate, .LosangeEnEtoiles, .TriDunTableau, .rechdutbl, .compter, .Permutation, .rechdutbl, .resduc, .tdm, .container, #dln {
+        margin-top: 1%;
+
+    }
+    #chaines ul {
+        display: flex;
+        flex-direction: row;
+    }
+}

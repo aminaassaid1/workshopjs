@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Untitled-1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <button id="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="50px" height="50px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M415 4146 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 26 -8 689 -10 2154 -8 l2117 3 27 21 c53 39 69 71 69 134 0 63 -16 95 -69 134 l-27 21 -2127 2 c-1753 2 -2132 0 -2157 -11z"/>
+                <path d="M415 2706 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 26 -8 593 -10 1834 -8 l1797 3 27 21 c53 39 69 71 69 134 0 63 -16 95 -69 134 l-27 21 -1807 2 c-1487 2 -1812 0 -1837 -11z"/>
+                <path d="M415 1266 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 25 -8 377 -10 1114 -8 1069 3 1077 3 1104 24 53 39 69 71 69 134 0 63 -16 95 -69 134 -27 21 -34 21 -1114 23 -888 2 -1093 0 -1117 -11z"/>
+            </g>
+        </svg>
+    </button>
+    <nav>
+        <button id="menu-btn-in">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="50px" height="50px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M415 4146 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 26 -8 689 -10 2154 -8 l2117 3 27 21 c53 39 69 71 69 134 0 63 -16 95 -69 134 l-27 21 -2127 2 c-1753 2 -2132 0 -2157 -11z"/>
+                    <path d="M415 2706 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 26 -8 593 -10 1834 -8 l1797 3 27 21 c53 39 69 71 69 134 0 63 -16 95 -69 134 l-27 21 -1807 2 c-1487 2 -1812 0 -1837 -11z"/>
+                    <path d="M415 1266 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 25 -8 377 -10 1114 -8 1069 3 1077 3 1104 24 53 39 69 71 69 134 0 63 -16 95 -69 134 -27 21 -34 21 -1114 23 -888 2 -1093 0 -1117 -11z"/>
+                </g>
+            </svg>
+        </button>
+        <h1>Education</h1>
+        <ul>
+            <li> <a href="home.html">HOME</a> </li>
+            <li> <a href="Permutation-de-deux-nombres.html">Permutation de deux nombres</a></li>
+            <li> <a href="Valider-une-date.html">Valider une date</a></li>
+            <li id="boucles"> <a>Boucles</a>
+                <ul class="dropdown" id="dropdownBoucle">
+                    <li id="multiblication" class="hide"> <a href="Table-de-multiplication.html">Table de multiplication</a></li>
+                    <li id="guess" class="hide"> <a href="Devine-le-nombre.html">Devine le nombre</a></li>
+                    <li id="losange" class="hide"> <a href="Losange-en-étoiles.html">Losange en étoiles</a></li>
+                </ul>
+            </li>
+            <li id="chaines"> <a href="#">Chaines de caractères</a>
+                <ul class="dropdown">
+                    <li id="RS" class="hide" > <a href="Recherche-et-suppression-dans-une-chaine.html">Recherche et suppression dans une chaine</a></li>
+                    <li id="voyelles" class="hide" > <a href="Compter-le-nombre-de-voyelles-dans-une-chaine.html">Compter le nombre de voyelles dans une chaine</a></li>
+                </ul>
+            </li>
+            <li id="tableaux"> <a href="#">Tableaux</a>
+                <ul class="dropdown">
+                    <li id="tri"  class="hide"  ><a href="Tri-d’un-tableau.html">Tri d’un tableau</a></li>
+                    <li id="recherche" class="hide"> <a href="Recherche-dans-un-tableau.html">Recherche dans un tableau</a></li>
+                </ul>
+            </li>
+            <li> <a href="Calculatrice.html">Calculatrice</a></li>
+        </ul>
+
+    </nav>
+    <!-- main -->
+    <main>
+        <!-- Devine le nombre ! -->
+        <div id="dln">
+            <h1>Devine le nombre !</h1>
+            <h2>Enoncé</h2>
+            <div class="part">
+                <p>L’utilisateur doit deviner un nombre entre 1 et 50 que le programme a choisi aléatoirement en 10
+                    tentatives. Quand l’utilisateur entre une valeur, on lui affiche le nombre de tentatives restantes,
+                    ainsi qu’un message indiquant si sa réponse est correcte ou pas.</p>
+            </div>
+
+            <div id="container">
+                <h2>Démo</h2>
+                <p>Guess a number between 1 and 50</p>
+                <p id="outputText">Enter a number below</p>
+                <input id="userInput">
+                <button id="enterButton">Enter</button>
+                <button id="againButton">Play again</button>
+                <p><span id="try">restetant</span></p>
+            </div>
+            <div>
+                <h2>Code source</h2>
+                <div>
+                    <textarea rows="61" readonly >
+
+                        var enterButton = document.getElementById('enterButton'); 
+                        var output = document.getElementById('outputText'); 
+                        var tentative = 10 ;
+                        var againButton = document.getElementById('againButton'); 
+                        var randomNumber = Math.ceil(Math.random()*50); 
+                        var i = 1 ; 
+                        function checkNumber(){ 
+                        var input = document.getElementById('userInput').value; 
+                        if((tentative - i) == 0) { 
+    
+                        enterButton.setAttribute('disabled','') 
+                        } 
+                        if(input == randomNumber){ 
+                        output.innerHTML="You guessed right "+ ", "+ " it was "+ randomNumber; 
+                        output.style.color="green"; 
+                        } 
+                        else if(input>randomNumber && input<50){ 
+                            output.innerHTML="You guessed too high"; 
+                            } 
+                            else if(input<randomNumber && input>1){ 
+                                output.innerHTML="You guessed too low"; 
+                                } 
+                                else if(input<1){ 
+                                    output.innerHTML="Higher, it has to be between 1 and 50"; 
+                                    } 
+                                    else if(isNaN(input)){ 
+                                    output.innerHTML="That's not a number!"; 
+                                    } 
+                                    else{ 
+                                    output.innerHTML="Lower, it has to be between 1 and 50"; 
+                                    } 
+                                    document.getElementById("try").innerHTML = `restant ${tentative - i }`; 
+                                    i++; 
+    
+    
+                                    } 
+                                    againButton.addEventListener('click', function(){ 
+                                    enterButton.addEventListener('click', checkNumber); 
+                                    location.reload();
+    
+                                    }) 
+                                    document.getElementById('tableaux').onclick=function(){ 
+                                    document.getElementById('tri').classList.toggle('hide'); 
+                                    document.getElementById('recherche').classList.toggle('hide'); 
+    
+    
+                                    } 
+                                    document.getElementById('chaines').onclick=function(){ 
+                                    document.getElementById('RS').classList.toggle('hide'); 
+                                    document.getElementById('voyelles').classList.toggle('hide'); 
+    
+                                    } 
+                                    document.getElementById('boucles').onclick=function(){ 
+                                    document.getElementById('multiblication').classList.toggle('hide'); 
+                                    document.getElementById('guess').classList.toggle('hide'); 
+                                    document.getElementById('lonsage').classList.toggle('hide'); 
+                                    } 
+                    </textarea> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="Devine-le-nombre.js"></script>
+</body>
+
+</html>
